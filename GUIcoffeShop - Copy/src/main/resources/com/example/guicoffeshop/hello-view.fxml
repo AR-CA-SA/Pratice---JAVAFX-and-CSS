@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="40.0" style="-fx-background-color: #191D1E;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guicoffeshop.HelloController">
+   <HBox alignment="CENTER_LEFT" prefHeight="129.0" prefWidth="200.0" style="-fx-background-color: #191D1E;">
+      <children>
+         <TextFieldListCell graphicTextGap="0.0" prefHeight="71.0" prefWidth="592.0" style="-fx-background-color: 00000;" text="MoonBucks" textFill="WHITE">
+            <font>
+               <Font size="36.0" />
+            </font>
+         </TextFieldListCell>
+      </children></HBox>
+
+
+   <HBox id="Header" fx:id="Header" alignment="CENTER" maxWidth="1000.0" prefHeight="129.0" prefWidth="200.0" spacing="200.0" style="-fx-background-color: #242B2D; -fx-background-radius: 20; -fx-border-width: 3; -fx-border-radius: 20; -fx-border-color: #A6A867;">
+      <children>
+          <Button onAction="#viewDrinks" style="-fx-background-color: #E3DC95; -fx-background-radius: 30; -fx-border-width: 3; -fx-border-radius: 25; -fx-border-color: #A6A867;" styleClass="buttonClass" text="View drinks">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+
+          <Button onAction="#viewMugs" style="-fx-background-color: #E3DC95; -fx-background-radius: 30;-fx-border-width: 3; -fx-border-radius: 25; -fx-border-color: #A6A867;" styleClass="buttonClass" text="View mugs">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+          <Button onAction="#viewGiftCards" style="-fx-background-color: #E3DC95; -fx-background-radius: 30; -fx-border-width: 3; -fx-border-radius: 25; -fx-border-color: #A6A867;" styleClass="buttonClass" text="View gift cards">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+      </children>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </HBox>
+   <VBox alignment="CENTER" maxWidth="1100.0" prefHeight="600.0" prefWidth="224.0" style="-fx-background-color: #242B2D; -fx-background-radius: 20; -fx-border-width: 3; -fx-border-radius: 20; -fx-border-color: #A6A867;">
+      <children>
+         <HBox alignment="CENTER" prefHeight="290.0" prefWidth="564.0" spacing="30.0">
+            <children>
+               <ListView fx:id="ShopList" prefHeight="290.0" prefWidth="250.0" />
+               <ListView fx:id="MoreInfoList" prefHeight="290.0" prefWidth="250.0" />
+            </children>
+         </HBox>
+         <MenuButton mnemonicParsing="false" text="MenuButton" textFill="WHITE">
+           <items>
+             <MenuItem mnemonicParsing="false" onAction="#ShowPrice" text="Show Price" />
+             <MenuItem fx:id="CaloriesItem" mnemonicParsing="false" onAction="#DrinkCalories" text="Show Calories" />
+               <MenuItem fx:id="BalanceItem" mnemonicParsing="false" onAction="#Balance" text="Show Balance" />
+               <MenuItem fx:id="TotalFat" mnemonicParsing="false" onAction="#DrinkFat" text="Show Fat" />
+               <MenuItem fx:id="Size" mnemonicParsing="false" onAction="#DrinkSize" text="Show Size" />
+               <MenuItem fx:id="Sugar" mnemonicParsing="false" onAction="#DrinkSugar" text="Show Sugar" />
+               <MenuItem fx:id="TaxInfo" mnemonicParsing="false" onAction="#PriceAfterTax" text="Show price after taxes" />
+           </items>
+            <VBox.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+         </MenuButton>
+      </children>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </VBox>
+</VBox>

@@ -1,0 +1,95 @@
+
+
+
+#ShopList{
+
+    -fx-background-color: #1D2427;
+
+    -fx-border-width:3px;
+    -fx-border-color:#A6A867;
+
+
+}
+
+
+#ShopList .list-cell{
+    -fx-background-color: transparent;
+    -fx-font-size:20px;
+    -fx-text-fill:white;
+
+
+
+}
+
+#MoreInfoList{
+   -fx-background-color: #1D2427;
+
+    -fx-border-width:3px;
+    -fx-border-color:#A6A867;
+}
+
+#MoreInfoList .list-cell{
+    -fx-background-color: transparent;
+    -fx-font-size:20px;
+    -fx-text-fill:white;
+}
+
+
+.scroll-bar{
+    -fx-background-color:#161E1F;
+    -fx-border-radius:80px;
+
+}
+
+.scroll-bar .thumb{
+   -fx-background-color:#252E31;
+
+
+
+}
+
+
+
+.scroll-bar:vertical {
+    -fx-pref-width: 5px;
+}
+
+.scroll-bar:horizontal {
+    -fx-pref-height: 20;
+}
+
+.scroll-bar .thumb:pressed{
+    -fx-background-color:#2B3E40;
+}
+
+#BShowMore{
+    -fx-background-color: #E3DC95;
+    -fx-background-radius: 30;
+    -fx-border-width: 3;
+    -fx-border-radius: 25;
+
+
+    -fx-border-width: 3;
+
+    -fx-border-color: #A6A867;
+    -fx-text-fill:black;
+
+}
+
+#BShowMore .menu-item{
+    -fx-background-color: transparent;
+
+
+
+}
+#BShowMore .context-menu{
+    -fx-background-color: #E3DC95;
+    -fx-background-radius: 20;
+
+}
+
+#BShowMore .menu-item:focused{
+    -fx-background-color: #A39E67;
+    -fx-background-radius: 60;
+
+}
